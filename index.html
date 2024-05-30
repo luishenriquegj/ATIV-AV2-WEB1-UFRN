@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Contatos</h1>
+    </header>
+    <main>
+        <section class="WrapperSection">
+            <form onsubmit="storeData(event)">
+                <div id="name" class="InputWrapper">
+                    <label for="nameInput">Nome</label>
+                    <input required id="nameInput"/>
+                </div>
+                <div id="CPF" class="InputWrapper">
+                    <label for="cpfInput">CPF</label>
+                    <input required type="text" id="cpfInput" maxlength="14" placeholder="123.456.789-00">
+                </div>
+                <div id="birthday" class="InputWrapper">
+                    <label for="birthdayInput">Data de Nascimento</label>
+                    <input required id="birthdayInput" type="date"/>
+                </div>
+                <div id="address" class="InputWrapper">
+                    <label for="addressInput">Endereço</label>
+                    <input required id="addressInput"/>
+                </div>
+                <div class="ButtonWrapper">
+                    <button type="submit" class="CustomButton">Cadastrar</button>
+                    <button type="button" class="CustomButton" onclick="showCards(event)">Exibir Cadastros</button>
+                    <button type="button" class="CustomButton">Buscar Cadastro</button>
+                    <button type="button" class="CustomButton" onclick="removeData(event)">Remover Cadastro</button>
+                </div>
+            </form>
+        </section>
+            
+            <section class="WrapperSection">
+                    <div class="CardWrapper" id="card-container"/>
+            </section>
+        </main>
+        <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
