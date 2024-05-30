@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: auto;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+}
+
+
+main {
+    padding: 1rem;
+    height: auto;
+}
+
+.WrapperSection {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: sapce-around;
+    background-color: #e4e4e4;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.WrapperSection:first-of-type {
+    background-color: #FFFF;
+    margin-bottom: 40px;
+} 
+
+.InputWrapper {
+    display: flex;
+    
+    flex-direction: column;
+    margin-bottom: 2rem;
+    >label {
+        margin-bottom: 10px;
+        font-size: 24px;
+    } 
+    > input {
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid grey;
+    }
+}
+
+.ButtonWrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+}
+
+
+
+.CustomButton {
+    padding: 10px;
+    color: white;
+    background-color: #3498db;
+    border: 1px solid #3498db;
+    border-radius: 3px;
+    transition: filter 0.3s; /* Smooth transition */
+}
+
+.CustomButton:hover {
+    background-color: rgb(25, 86, 126);
+    border-color:rgb(25, 86, 126);
+}
+
+.PersonCard{
+    background-color: #FFF;
+    padding: 20px;
+    margin: 25px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    > h3 {
+        color: rgb(112, 112, 252);
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
